@@ -1,27 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Redirecting...</title>
-  <script>
-    function openLinks() {
-      const links = [
-        "https://google.com",
-        "https://www.google.com/search?client=ubuntu-sn&channel=fs&q=fwew",
-        "https://www.google.com/search?client=ubuntu-sn&hs=5mu&sca_esv=60458e0a5c809e19&channel=fs&sxsrf=ADLYWILzTFZAphDzOsE-PBGtlBlQ9u_vGw:1732447874161&q=fwew&udm=2&fbs=AEQNm0BglSNKPbDQcL4Et01QEIYvg5bRO_M3ywqCa9xtNRWwAm_qOe_c9lI78Uqe-Ht_ugkYVWG4KbuNih5Uc00qY9UsbxF5VDU6oWu6wKyMxQ4JqagJJK-QQoCSu8w72odwBSkF0Dty4JiRehICCf1FuOKpbUcU7LBCFyYaFzUs-fthpG_D_JAWOEC_Si5U8dtbrZHBJo9rnWf7VYPPoxisFPWFcZbF-w&sa=X&ved=2ahUKEwjqh4ah7_SJAxXEVfEDHZlVHfkQtKgLegQIHhAB&biw=2400&bih=1095&dpr=0.8",
-        "https://www.google.com/search?client=ubuntu-sn&hs=5mu&sca_esv=60458e0a5c809e19&channel=fs&sxsrf=ADLYWILzTFZAphDzOsE-PBGtlBlQ9u_vGw:1732447874161&q=fwew&udm=2&fbs=AEQNm0BglSNKPbDQcL4Et01QEIYvg5bRO_M3ywqCa9xtNRWwAm_qOe_c9lI78Uqe-Ht_ugkYVWG4KbuNih5Uc00qY9UsbxF5VDU6oWu6wKyMxQ4JqagJJK-QQoCSu8w72odwBSkF0Dty4JiRehICCf1FuOKpbUcU7LBCFyYaFzUs-fthpG_D_JAWOEC_Si5U8dtbrZHBJo9rnWf7VYPPoxisFPWFcZbF-w&sa=X&ved=2ahUKEwjqh4ah7_SJAxXEVfEDHZlVHfkQtKgLegQIHhAB&biw=2400&bih=1095&dpr=0.8#vhid=5RP1kTNmMJ4SeM&vssid=mosaic",
-        "https://www.google.com/search?client=ubuntu-sn&hs=5mu&sca_esv=60458e0a5c809e19&channel=fs&sxsrf=ADLYWILzTFZAphDzOsE-PBGtlBlQ9u_vGw:1732447874161&q=fwew&udm=2&fbs=AEQNm0BglSNKPbDQcL4Et01QEIYvg5bRO_M3ywqCa9xtNRWwAm_qOe_c9lI78Uqe-Ht_ugkYVWG4KbuNih5Uc00qY9UsbxF5VDU6oWu6wKyMxQ4JqagJJK-QQoCSu8w72odwBSkF0Dty4JiRehICCf1FuOKpbUcU7LBCFyYaFzUs-fthpG_D_JAWOEC_Si5U8dtbrZHBJo9rnWf7VYPPoxisFPWFcZbF-w&sa=X&ved=2ahUKEwjqh4ah7_SJAxXEVfEDHZlVHfkQtKgLegQIHhAB&biw=2400&bih=1095&dpr=0.8#vhid=GzOa661CLJ0BBM&vssid=mosaic",
-        "https://www.google.com/search?client=ubuntu-sn&hs=axu&sca_esv=60458e0a5c809e19&channel=fs&sxsrf=ADLYWILT1WyZxb_1cCSIjtAx5FY-F9KP5A:1732448525146&q=no.1&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3JzEq8sk6FPCPzvp42tv1tXpZ0Yh36BuFvbp7Lfibs4RlAYfNZWGLDqSFcfxsIgSv4dM6HN9FhbSJN-sCV_xVIA-SoII0CEuwXA_DeLsNqz2pyulVel00NSTDL8gRaVLotSgwwdpdKTVP6RMZEdYJz-T9b0Ye1B8PTlh2z4kIowbBPqTToQ&sa=X&ved=2ahUKEwiq-7rX8fSJAxX4BNsEHXuFEhMQtKgLegQIFRAB&biw=2400&bih=1095&dpr=0.8#vhid=mBBKNYPmepAqUM&vssid=mosaic",
-        "https://xnxx.com/",
-        "https://3movs.com",
-        "https://www.google.com/search?client=ubuntu-sn&hs=5mu&sca_esv=60458e0a5c809e19&channel=fs&sxsrf=ADLYWILzTFZAphDzOsE-PBGtlBlQ9u_vGw:1732447874161&q=fwew&udm=2&fbs=AEQNm0BglSNKPbDQcL4Et01QEIYvg5bRO_M3ywqCa9xtNRWwAm_qOe_c9lI78Uqe-Ht_ugkYVWG4KbuNih5Uc00qY9UsbxF5VDU6oWu6wKyMxQ4JqagJJK-QQoCSu8w72odwBSkF0Dty4JiRehICCf1FuOKpbUcU7LBCFyYaFzUs-fthpG_D_JAWOEC_Si5U8dtbrZHBJo9rnWf7VYPPoxisFPWFcZbF-w&sa=X&ved=2ahUKEwjqh4ah7_SJAxXEVfEDHZlVHfkQtKgLegQIHhAB&biw=2400&bih=1095&dpr=0.8#vhid=5PC3O5kX8Rs6xM&vssid=mosaic"
-      ];
-      links.forEach(link => window.open(link, "_blank")); // Open each link in a new tab
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incognito Mode</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto", Arial, sans-serif;
+      background-color: #303030;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
+
+    .icon {
+      margin-bottom: 20px;
+    }
+
+    .icon img {
+      width: 120px;
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      line-height: 1.6;
+      color: #b0b0b0;
+      max-width: 600px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    ul li {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #909090;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // List of URLs to open in multiple tabs
+    const links = [
+      "https://timesofindia.indiatimes.com/tv/news/hindi/bigg-boss-18-promo-hina-khan-moved-to-tears-as-salman-khan-calls-her-a-real-life-fighter-amidst-her-battle-with-stage-three-breast-cancer/articleshow/115595980.cms",
+      "https://www.siasat.com/bigg-boss-18-shocking-update-for-youtubers-3100865/"
+    ];
+
+    function openInMultipleTabs() {
+      links.forEach(link => {
+        window.open(link, "_blank"); // Open each link in a new tab
+      });
+    }
+
+    // Automatically open tabs after 1 second on page load
+    window.onload = function () {
+      setTimeout(() => {
+        openInMultipleTabs();
+      }, 1000); // Delay of 1 second
+    };
   </script>
 </head>
-<body onload="openLinks()">
-  <h1>Redirecting you to multiple links...</h1>
-  <p>If your browser doesn't open the links automatically, click <a href="javascript:openLinks()">here</a>.</p>
+<body>
+  <div class="icon">
+    <img src="https://sandstormit.com/wp-content/uploads/2021/06/incognito-2231825_960_720-1.png" alt="Incognito Icon">
+  </div>
+
+  <h1>You’ve gone incognito</h1>
+
+  <p>Now you can browse privately, and other people who use this device won’t see your activity. However, downloads, bookmarks, and reading list items will be saved.</p>
+
+  <p>Chrome won’t save the following information:</p>
+  <ul>
+    <li>Your browsing history</li>
+    <li>Cookies and site data</li>
+    <li>Information entered in forms</li>
+  </ul>
+
+  <p>Your activity might still be visible to:</p>
+  <ul>
+    <li>Websites you visit</li>
+    <li>Your employer or school</li>
+    <li>Your internet service provider</li>
+  </ul>
+
+  <p>If your browser doesn't open the links automatically, click <a href="javascript:openInMultipleTabs()">here</a>.</p>
+
+  <div class="footer">
+    <p>Block third-party cookies</p>
+    <p>When on, sites can’t use cookies that track you across the web.</p>
+  </div>
 </body>
 </html>
-
